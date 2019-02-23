@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class prac {
+    public static void main(String[] awq){
+
+        int t=0;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Size of list");
+        int n= sc.nextInt();
+        int[] arr = new int[n];
+        System.out.println("Enter values of list");
+        for(int i=0;i<n;i ++ ){
+            arr[i]=sc.nextInt();
+        }
+        System.out.println("List after applying selection sort");
+        for(int i=0;i<n;i++){
+            for(int j=i+1;j<n;j++){
+                if(arr[i]>arr[j]){
+                    t=arr[i];
+                    arr[i]=arr[j];
+                    arr[j]=t;
+                }
+            }
+        }
+        for(int i=0;i<n;i ++ ){
+            System.out.print(arr[i] + " ");
+        }
+    }
+}
