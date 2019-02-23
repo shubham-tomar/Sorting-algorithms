@@ -30,7 +30,7 @@ public class prac{
         System.out.println("List after applying bubble sort");
         bsort(a);
         for(int i=0;i<n;i++){
-            System.out.println(a[i] + " ");
+        System.out.println(a[i] + " ");
         }
     }
 }
